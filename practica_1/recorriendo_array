@@ -1,0 +1,22 @@
+var articulos = [
+    {nombre: "bici", costo: "3000"},
+    {nombre: "tv", costo: "2500"},
+    {nombre: "libro", costo: "3000"},
+    {nombre: "pc", costo: "120"},
+];
+
+var artFiltrados = articulos.filter(function(articulo){
+    return articulo.costo <= 2000
+});
+var nomFiltrados = articulos.map(function(articulo){
+    return articulo.nombre
+});
+    var encuentraArticulos = articulos.find(function(articulo){
+        return articulo.nombre === "pc"
+    });
+articulos.forEach(function(articulo){
+    console.log(articulo.nombre);
+});
+var artBaratos = articulos.sime(function(articulo){
+    return articulo.costo <= 2000;
+});
